@@ -172,12 +172,12 @@ export function DemographicForm({ isOpen, onSubmit, classId }: DemographicFormPr
               </div>
             </div>
 
-            {/* Programming Experience */}
+            {/* Teaching Experience */}
             <div className="space-y-4">
-              <h4 className="text-md font-semibold text-black border-b border-gray-200 pb-2">Programming Experience</h4>
+              <h4 className="text-md font-semibold text-black border-b border-gray-200 pb-2">Teaching Experience</h4>
 
               <div className="space-y-2">
-                <Label htmlFor="yearsOfExperience">Years of Programming Experience *</Label>
+                <Label htmlFor="yearsOfExperience">Number of classes you have taught for ( Intrusctor, GTA, TA ) *</Label>
                 <Select
                   value={formData.yearsOfExperience}
                   onValueChange={(value) => handleInputChange("yearsOfExperience", value)}
@@ -186,12 +186,12 @@ export function DemographicForm({ isOpen, onSubmit, classId }: DemographicFormPr
                     <SelectValue placeholder="Select years of experience" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="0">0 years (Complete beginner)</SelectItem>
-                    <SelectItem value="less-than-1">Less than 1 year</SelectItem>
-                    <SelectItem value="1-2">1-2 years</SelectItem>
-                    <SelectItem value="3-5">3-5 years</SelectItem>
-                    <SelectItem value="6-10">6-10 years</SelectItem>
-                    <SelectItem value="10-plus">10+ years</SelectItem>
+                    <SelectItem value="0">0 classes</SelectItem>
+                    <SelectItem value="less-than-1">1 class</SelectItem>
+                    <SelectItem value="1-2">2 classes</SelectItem>
+                    <SelectItem value="3-5">3 classes</SelectItem>
+                    <SelectItem value="6-10">4 classes</SelectItem>
+                    <SelectItem value="10-plus">5 classes</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
